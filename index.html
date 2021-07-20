@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>HTML Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul id="navlinks">
+            <li><a class="nav-link" href="#a">a</a></li>
+            <li><a class="nav-link" href="#article">article</a></li>
+            <li><a class="nav-link" href="#aside">aside</a></li>
+            <li><a class="nav-link" href="#br">br</a></li>
+            <li><a class="nav-link" href="#button">button</a></li>
+            <li><a class="nav-link" href="#footer">footer</a></li>
+            <li><a class="nav-link" href="#form">form</a></li>
+            <li><a class="nav-link" href="#header">header</a></li>
+            <li><a class="nav-link" href="#img">img</a></li>
+            <li><a class="nav-link" href="#input">input</a></li>
+            <li><a class="nav-link" href="#nav">nav</a></li>
+            <li><a class="nav-link" href="#section">section</a></li>
+            <li><a class="nav-link" href="#span">span</a></li>
+            <li><a class="nav-link" href="#textarea">textarea</a></li>
+            <li><a class="nav-link" href="#video">video</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <main id=main-doc>
+        <section id="a" class="main-section">
+            <header>a</header>
+            <p>The <span class="highlight">&lt;a&gt;</span> (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Content within each
+                <span class="highlight">&lt;a&gt;</span> should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the <span class="highlight">&lt;a&gt;</span> element will activate it.</p>
+            <div class="code">
+                <code class="code-snippet">
+                    <span class="code-line">1</span><span class="element-color">&lt;p&gt;</span>You can reach Michael at:<span class="element-color">&lt;/p&gt;</span>
+                    <br><span class="code-line">2</span>
+                    <br><span class="code-line">3</span><span class="element-color">&lt;ul&gt;</span>
+                    <br><span class="code-line">4</span>&emsp;&emsp;&lt;<span class="element-color">li&gt;&lt;a</span> <span class="attribute-color">href</span>=<span class="element-color">"https://example.com"&gt;</span>Website<span class="element-color">&lt;p&gt;</span>You can reach Michael at:<span class="element-color">&lt;/a&gt;&lt;/li&gt;</span>
+                    <br><span class="code-line">5</span>&emsp;&emsp;<span class="element-color">&lt;li&gt;&lt;a</span> <span class="attribute-color">href</span>=<span class="element-color">"mailto:m.blut@example.com"&gt;Email&lt;/a&gt;&lt;/li&gt;</span>
+                    <br><span class="code-line">6</span>&emsp;&emsp;<span class="element-color">&lt;li&gt;&lt;a</span> <span class="attribute-color">href</span>=<span class="element-color">&lt;p&gt;</span>You can reach Michael at:<span class="element-color">"tel:+123456789"&gt;Phone&lt;/a&gt;&lt;li&gt;</span>
+                    <br><span class="code-line">7</span><span class="element-color">&lt;/ul&gt;</span>
+                    <br><span class="code-line">8</span>
+                </code>
+                <div class="code-display">
+                    <p>You can reach Michael at:</p>
+
+                    <ul>
+                        <li><a href="https://example.com">Website</a></li>
+                        <li><a href="mailto:m.bluth@example.com">Email</a></li>
+                        <li><a href="tel:+123456789">Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+            <article class="extra-info" id="href">
+                <h4>href</h4>
+                <p>
+                    The URL that the hyperlink points to. Links are not restricted to HTTP-based URLs — they can use any URL scheme supported by browsers:</p>
+                <ul>
+                    <li>Sections of a page with fragment URLs</li>
+                    <li>Pieces of media files with media fragments</li>
+                    <li>Telephone numbers with <span class="highlight">tel:</span> URLs</li>
+                    <li>Email addresses with <span class="highlight">mailto:</span> URLs</li>
+                    <li>While web browsers may not support other URL schemes, web sites can with <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler">registerProtocolHandler()</a></li>
+                </ul>
+            </article>
+        </section>
+        <section id="article" class="main-section">
+            <header>article</header>
+            <p>The <span class="highlight">&lt;article&gt;</span> represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include:
+                a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
+        </section>
+        <section id="aside" class="main-section">
+            <header>aside</header>
+            <p>The <span class="highlight">&lt;aside&gt;</span> represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
+        </section>
+        <section id="br" class="main-section">
+            <header>br</header>
+            <p>The <span>&lt;br&gt;</span> produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.</p>
+            <div class="code">
+                <code class="code-snippet">
+                    <span class="code-line">1</span><span class="element-color">&lt;p&gt;</span> O’er all the hilltops<span class="element-color">&lt;br&gt;</span>
+                    <br><span class="code-line">2</span>&emsp;&emsp;&lt;Is quiet now,<span class="element-color">&lt;br&gt;</span>
+                    <br><span class="code-line">3</span>&emsp;&emsp;&lt;In all the treetops<span class="element-color">&lt;br&gt;</span>
+                    <br><span class="code-line">4</span>&emsp;&emsp;&lt;Hearest thou<span class="element-color">&lt;br&gt;</span>
+                    <br><span class="code-line">5</span>&emsp;&emsp;&lt;Hardly a breath;<span class="element-color">&lt;br&gt;</span>
+                    <br><span class="code-line">6</span>&emsp;&emsp;&lt;The birds are asleep in the trees:<span class="element-color">&lt;br&gt;</span>
+                    <br><span class="code-line">7</span>&emsp;&emsp;&lt;Wait, soon like these<span class="element-color">&lt;br&gt;</span>
+                    <br><span class="code-line">8</span>&emsp;&emsp;&lt;Thou too shalt rest.
+                    <br><span class="code-line">9</span><span class="element-color">&lt;/p&gt;</span>
+                </code>
+                <div class="code-display">
+                    <p> O’er all the hilltops<br> Is quiet now,<br> In all the treetops<br> Hearest thou<br> Hardly a breath;<br> The birds are asleep in the trees:<br> Wait, soon like these<br> Thou too shalt rest.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="button" class="main-section">
+            <header>button</header>
+            <p>The <span class="highlight">&lt;button&gt;</span> represents a clickable button, used to submit <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms">forms</a> or anywhere in a document for accessible, standard button functionality.
+                By default, HTML buttons are presented in a style resembling the platform the <a href="https://developer.mozilla.org/en-US/docs/Glossary/User_agent">user agent</a> runs on, but you can change buttons’ appearance with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>.</p>
+
+            <div class="code">
+                <code class="code-snippet">
+                    <span class="code-line">1</span><span class="element-color">&lt;button <span class="attribute-color">class</span>=<span class="element-color">"favorite styled"</span>
+                    <br><span class="code-line">2</span>&emsp;&emsp;&emsp;&emsp;&lt;<span class="attribute-color">type</span>=<span class="element-color">"button"&gt;</span>
+                    <br><span class="code-line">3</span>&emsp;&emsp;&lt;Add to favorites
+                    <br><span class="code-line">4</span><span class="element-color">&lt;/button&gt;</span>
+                    <br><span class="code-line">5
+                </code>
+                <div class="code-display">
+                    <button class="favorite styled" type="button">Add to favorites</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="footer" class="main-section">
+            <header>footer</header>
+            <p>The <span class="highlight">&lt;footer&gt;</span> represents a footer for its nearest <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#sectioning_content">sectioning content</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#sectioning_root">sectioning root</a>                element. A <span class="highlight">&lt;footer&gt;</span> typically contains information about the author of the section, copyright data or links to related documents.</p>
+        </section>
+        <section id="form" class="main-section">
+            <header>form</header>
+            <p>The <span class="highlight">&lt;form>&gt;</span> represents a document section containing interactive controls for submitting information.</p>
+        </section>
+        <section id="header" class="main-section">
+            <header>header</header>
+            <p>The <span class="highlight">&lt;header&gt;</span> represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</p>
+            <div class="code">
+                <code class="code-snipper">
+                    <span class="code-line">1</span><span class="element-color">&lt;header</span><span class="attribute-color">class</span>=<span class="element-color">&lt;"page-header"&gt;</span>
+                    <br><span class="code-line">2</span>&emsp;&emsp;&lt;<span class="element-color">&lt;h1&gt;</span>Cute Puppies Express!<span class="element-color">&lt;/h1&gt;</span>
+                    <br><span class="code-line">3</span><span class="element-color">&lt;/header&gt;</span>
+                    <br><span class="code-line">4</span>
+                    <br><span class="code-line">5</span><span class="element-color">&lt;main&gt;</span>
+                    <br><span class="code-line">6</span>&emsp;&emsp;&lt;<span class="element-color">&lt;p&gt;</span>I love beagles <span class="element-color">em</span>so<span class="element-color">/em</span> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!<span class="element-color">/p</span>
+                    <br><span class="code-line">7</span><span class="element-color">&lt;/main&gt;</span>
+                    <br><span class="code-line">8</span>
+                </code>
+                <div class="code-display">
+                    <header class="page-header">
+                        <h1>Cute Puppies Express!</h1>
+                    </header>
+
+                    <main>
+                        <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+                    </main>
+                </div>
+            </div>
+        </section>
+        <section id="img" class="main-section">
+            <header>img</header>
+            <p>The <span class="highlight">&lt;img&gt;</span> embeds an image into the document. </p>
+        </section>
+        <section id="input" class="main-section">
+            <header>input</header>
+            <p>The <span class="highlight">&lt;input&gt;</span> is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device
+                and <span class="highlight">user agent</span>. The <span class="highlight">&lt;input&gt;</span> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</p>
+        </section>
+        <section id="nav" class="main-section">
+            <header>nav</header>
+            <p>The <span class="highlight">&lt;nav&gt;</span> represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables
+                of contents, and indexes.</p>
+        </section>
+        <section id="section" class="main-section">
+            <header>section</header>
+            <p>The <span class="highlight">&lt;section&gt;</span> represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</p>
+        </section>
+        <section id="span" class="main-section">
+            <header>span</header>
+            <p>The <span class="highlight">&lt;span&gt;</span> is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or
+                because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <span class="highlight">&lt;span&gt;</span> is very much like a &lt;div&gt; element, but &lt; div&gt; is a block-level
+                element whereas a <span class="highlight">&lt;span&gt;</span> is an inline element.</p>
+        </section>
+        <section id="textarea" class="main-section">
+            <header>textarea</header>
+            <p>The <span class="highlight">&lt;textarea&gt;</span> represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.</p>
+
+            <div class="code">
+                <code class="code-snipper">
+                    <span class="code-line">1</span><span class="element-color">&lt;label</span> <span class="attribute-color">for</span>=<span class="element-color">"story"&gt;</span>Tell us your story:<span class="element-color">&lt;/label&gt;</span>
+                    <br><span class="code-line">2</span>
+                    <br><span class="code-line">3</span><span class="element-color">&lt;textarea</span><span class="attribute-color">id</span>=<span class="element-color">"story</span><span class="attribute-color">name</span>=<span class="element-color">"story"&gt;</span>
+                    <br><span class="code-line">4</span>&emsp;&emsp;<span class="attribute-color">rows</span>=<span class="element-color">"5"</span><span class="attribute-color">cols</span>=<span class="element-color">"33"&gt;</span>
+                    <br><span class="code-line">5</span>It was a dark and stormy night...
+                    <br><span class="code-line">6</span><span class="element-color">&lt;/textarea&gt;</span>
+                    <br><span class="code-line">7</span>
+                </code>
+                <div class="code-display">
+                    <label for="story">Tell us your story:</label>
+                    <textarea id="story" name="story" rows="5" cols="33">
+                    It was a dark and stormy night...
+                    </textarea>
+                </div>
+            </div>
+        </section>
+        <section id="video" class="main-section">
+            <header>video</header>
+            <p>The HTML Video element (<span class="highlight">&lt;video&gt;</span>) embeds a media player which supports video playback into the document. You can use <span class="highlight">&lt;video&gt;</span> for audio content as well, but the &lt;audio&gt;
+                element may provide a more appropriate user experience.</p>
+        </section>
+    </main>
+</body>
+
+</html>
